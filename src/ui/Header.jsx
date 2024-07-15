@@ -11,14 +11,22 @@ const StyledHeader = styled.header`
   gap: 2.4rem;
   align-items: center;
   justify-content: flex-end;
+
+  @media screen and (max-width: 768px) {
+    /* display: none; */
+  }
 `;
 
 function Header() {
   return (
-    <StyledHeader>
-      <UserAvatar />
-      <HeaderMenu />
-    </StyledHeader>
+    <>
+      <StyledHeader>
+        <UserAvatar />
+        <HeaderMenu />
+      </StyledHeader>
+
+      {/* <p>---</p> */}
+    </>
   );
 }
 

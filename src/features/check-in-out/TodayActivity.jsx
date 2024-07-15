@@ -19,6 +19,12 @@ const StyledToday = styled.div`
   gap: 2.4rem;
   grid-column: 1 / span 2;
   padding-top: 2.4rem;
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem 0;
+    display: block;
+
+  }
 `;
 
 const TodayList = styled.ul`

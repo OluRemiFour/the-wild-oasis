@@ -31,6 +31,9 @@ const Stacked = styled.div`
   flex-direction: column;
   gap: 0.2rem;
 
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
   & span:first-child {
     font-weight: 500;
   }
@@ -39,11 +42,17 @@ const Stacked = styled.div`
     color: var(--color-grey-500);
     font-size: 1.2rem;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.3rem 0;
+    /* display: none; */
+  }
 `;
 
 const Amount = styled.div`
   font-family: "Sono";
   font-weight: 500;
+  padding: 1rem 0;
 `;
 
 function BookingRow({

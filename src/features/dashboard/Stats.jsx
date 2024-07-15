@@ -6,7 +6,22 @@ import {
 } from "react-icons/hi2";
 import Stat from "./Stat";
 import { formatCurrency } from "../../utils/helpers";
+import styled from "styled-components";
 
+// const StyledBookingDataBox = styled.section`
+
+const StatBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+// const note = st  yled.
 function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   // 1.
   const numBookings = bookings.length;
@@ -24,7 +39,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   // num checked in nights / all available nights (num days * num cabins)
 
   return (
-    <>
+    <StatBox>
       <Stat
         title="Bookings"
         color="blue"
@@ -49,7 +64,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
         icon={<HiOutlineChartBar />}
         value={Math.round(occupation * 100) + "%"}
       />
-    </>
+    </StatBox>
   );
 }
 

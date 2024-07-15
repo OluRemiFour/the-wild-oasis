@@ -10,6 +10,11 @@ const Form = styled.form`
       background-color: var(--color-grey-0);
       border: 1px solid var(--color-grey-100);
       border-radius: var(--border-radius-md);
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        margin: 0 auto;
+      }
     `}
 
   ${(props) =>

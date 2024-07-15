@@ -19,6 +19,12 @@ const ChartBox = styled.div`
   padding: 2.4rem 3.2rem;
   grid-column: 3 / span 2;
 
+  @media screen and (max-width: 768px) {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
   & > *:first-child {
     margin-bottom: 1.6rem;
   }

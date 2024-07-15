@@ -12,6 +12,11 @@ const StyledTodayItem = styled.li`
   gap: 1.2rem;
   align-items: center;
 
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   font-size: 1.4rem;
   padding: 0.8rem 0;
   border-bottom: 1px solid var(--color-grey-100);
