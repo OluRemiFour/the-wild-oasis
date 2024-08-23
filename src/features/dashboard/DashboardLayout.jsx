@@ -10,7 +10,8 @@ import TodayActivity from "../check-in-out/TodayActivity";
 
 const StyledDashboardLayout = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 50% 1fr 45% 1fr;
   grid-template-rows: auto 34rem auto;
   padding: 1rem;
   gap: 2.4rem;
